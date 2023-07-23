@@ -3,6 +3,11 @@
   "item.tutorialmod.raw_zircon": "Raw Zircon",
   "item.tutorialmod.blueberry": "Blueberry",
   "item.tutorialmod.blueberry_seeds": "Blueberry Seeds",
+  "item.tutorialmod.zircon_sword": "Zircon Sword",
+  "item.tutorialmod.zircon_shovel": "Zircon Shovel",
+  "item.tutorialmod.zircon_pickaxe": "Zircon Pickaxe",
+  "item.tutorialmod.zircon_axe": "Zircon Axe",
+  "item.tutorialmod.zircon_hoe": "Zircon Hoe",
 
   "block.tutorialmod.zircon_block": "Block of Zircon",
   "block.tutorialmod.zircon_ore": "Zircon Ore",

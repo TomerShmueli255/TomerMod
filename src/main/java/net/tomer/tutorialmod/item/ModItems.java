@@ -1,8 +1,9 @@
 package net.tomer.tutorialmod.item;
 
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -27,6 +28,33 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
 
+
+    public static final RegistryObject<SwordItem> ZIRCON_SWORD = ITEMS.register("zircon_sword",
+            () -> new SwordItem(Tiers.ZIRCON, 5, 3.5f, new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+
+    public static final RegistryObject<ShovelItem> ZIRCON_SHOVEL = ITEMS.register("zircon_shovel",
+            () -> new ShovelItem(Tiers.ZIRCON, 0, 1f, new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+
+    public static final RegistryObject<PickaxeItem> ZIRCON_PICKAXE = ITEMS.register("zircon_pickaxe",
+            () -> new PickaxeItem(Tiers.ZIRCON, 2, 2.5f, new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+
+    public static final RegistryObject<AxeItem> ZIRCON_AXE = ITEMS.register("zircon_axe",
+            () -> new AxeItem(Tiers.ZIRCON, 3, 3.5f, new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+
+    public static final RegistryObject<HoeItem> ZIRCON_HOE = ITEMS.register("zircon_hoe",
+            () -> new HoeItem(Tiers.ZIRCON, 0, 0, new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+
+
+    public static class Tiers {
+        public static final Tier ZIRCON = new ForgeTier(
+                3,
+                800,
+                1.5f,
+                3,
+                350,
+                null,
+                () -> Ingredient.of(ModItems.ZIRCON.get()));
+    }
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
