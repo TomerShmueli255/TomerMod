@@ -9,6 +9,11 @@
   "item.tutorialmod.zircon_axe": "Zircon Axe",
   "item.tutorialmod.zircon_hoe": "Zircon Hoe",
 
+  "item.tutorialmod.zircon_helmet": "Zircon Helmet",
+  "item.tutorialmod.zircon_chestplate": "Zircon Chestplate",
+  "item.tutorialmod.zircon_leggings": "Zircon Leggings",
+  "item.tutorialmod.zircon_boots": "Zircon Boots",
+
   "block.tutorialmod.zircon_block": "Block of Zircon",
   "block.tutorialmod.zircon_ore": "Zircon Ore",
   "block.tutorialmod.deepslate_zircon_ore": "Deepslate Zircon Ore",
