@@ -17,6 +17,7 @@ import net.tomer.tutorialmod.TutorialMod;
 import net.tomer.tutorialmod.block.custom.BlueberryCropBlock;
 import net.tomer.tutorialmod.item.ModCreativeModeTab;
 import net.tomer.tutorialmod.item.ModItems;
+import net.tomer.tutorialmod.item.custom.JumpyBlock;
 
 import java.util.function.Supplier;
 
@@ -40,6 +41,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BLUEBERRY_CROP = BLOCKS.register("blueberry_crop",
             () -> new BlueberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
+            () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

@@ -13,6 +13,8 @@ import net.minecraftforge.registries.RegistryObject;
 import net.tomer.tutorialmod.TutorialMod;
 import net.tomer.tutorialmod.base.ModArmorMaterial;
 import net.tomer.tutorialmod.block.ModBlocks;
+import net.tomer.tutorialmod.item.custom.EightBallItem;
+import net.tomer.tutorialmod.item.custom.ModArmorItem;
 
 import javax.tools.Tool;
 
@@ -52,7 +54,7 @@ public class ModItems {
             () -> new ArmorItem(ArmorTiers.ZIRCON, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
 
     public static final RegistryObject<ArmorItem> ZIRCON_CHESTPLATE = ITEMS.register("zircon_chestplate",
-            () -> new ArmorItem(ArmorTiers.ZIRCON, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+            () -> new ModArmorItem(ArmorTiers.ZIRCON, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
 
     public static final RegistryObject<ArmorItem> ZIRCON_LEGGINGS = ITEMS.register("zircon_leggings",
             () -> new ArmorItem(ArmorTiers.ZIRCON, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
@@ -60,6 +62,8 @@ public class ModItems {
     public static final RegistryObject<ArmorItem> ZIRCON_BOOTS = ITEMS.register("zircon_boots",
             () -> new ArmorItem(ArmorTiers.ZIRCON, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
 
+    public static final RegistryObject<Item> EIGHT_BALL = ITEMS.register("eight_ball",
+            () -> new EightBallItem(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
 
     public static class ToolTiers {
         public static final Tier ZIRCON = new ForgeTier(
